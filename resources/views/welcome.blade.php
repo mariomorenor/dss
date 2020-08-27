@@ -63,27 +63,27 @@
             }
         </style>
     </head>
-    <body>
+    <body style="background-image: url({{asset('img/fondo.jpg')}}); background-repeat: no-repeat; background-size: 100% 100%; ">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">{{ __('Login') }}</a>
+                        <a style="color: white" href="{{ route('login') }}">{{ __('Login') }}</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">{{ __('Register') }}</a>
+                            <a style="color: white" href="{{ route('register') }}">{{ __('Register') }}</a>
                         @endif
                     @endauth
                 </div>
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
+                <div class="title m-b-md " style="color: white">
                    Bienvenido
                 </div>
-                <p style="font-size: 2rem">Por favor inicia sesión o regístrate</p>
+                <p style="font-size: 2rem; color:white">Por favor inicia sesión o regístrate</p>
             </div>
         </div>
     </body>

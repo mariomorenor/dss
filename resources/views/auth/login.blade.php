@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@section('styleBody')
+style="background-image: url({{asset('img/fondo7.jpg')}}); background-repeat: no-repeat; background-size: 1920px 1080px;"
+@endsection
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
